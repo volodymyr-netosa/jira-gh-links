@@ -1,8 +1,10 @@
 
 
 const regex = /^https:\/\/github.com\/Bini-Games/i;
+console.log('start worker');
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    console.log('abs');
+    console.log(tab);
+    console.log(regex.test(tab.url));
     if (changeInfo.status === 'complete' && regex.test(tab.url)) {
         chrome.scripting.executeScript({
             target: { tabId: tabId },
