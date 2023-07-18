@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Pattern to Links",
+    "version": "1.2",
+    "description": "Converts specific patterns to links on web pages.",
+    "background": {
+        "service_worker": "content.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon-16x16.png"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "web_accessible_resources": [{
+        "resources": ["img/jira.png"],
+        "matches": ["<all_urls>"]
+    }],
+\  }

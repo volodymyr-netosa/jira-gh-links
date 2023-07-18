@@ -1,0 +1,16 @@
+/* Define the styles for the icon link */
+.jira-icon-link {
+    display: inline-flex; /* Use inline-flex to vertically center the content */
+    align-items: center; /* Vertically center the content */
+    text-decoration: none; /* Remove underline from the link */
+    margin-right: 5px; /* Adjust spacing as needed */
+    padding: 0 5px; /* Optional: Add padding for some spacing around the image */
+  }
+  
+/* Define the styles for the icon */
+.jira-icon-link img {
+    width: 16px; /* Adjust the width and height as per your icon's dimensions */
+    height: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
